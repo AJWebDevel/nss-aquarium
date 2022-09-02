@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css" </head>
+
+<body>
+    <!--This is the website header-->
+    <header>
+        Martin's Aquarium
+    </header>
+    <!--
+    <!--This section is for fish information
+    <section id="fishPictures">
+        <div id="fishPictureTitle">
+            <h2 id="fishPictureTitleText">Martin's Current Fish</h2>
+        </div>
+        <!--Each article below represents a fish with info and an image
+        <article class="fishInfoArticles">
+            <figure class="fishImages">
+                <img src="https://i0.wp.com/btr.michaelkwan.com/wp-content/uploads/2009/03/ponyo.jpg?resize=525%2C233"
+                    alt="Ponyo_in_Jellyfish">
+            </figure>
+        </article>
+        <article id="fishInfoArticles">
+            <figure class="fishImages">
+                <img src="https://pbs.twimg.com/media/DUdZg5EU8AELzwg.jpg" alt="Clamantha_picture">
+            </figure>
+        </article>
+        <article id="fishInfoArticles">
+            <figure class="fishImages">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Shrimp_In_Chair">
+            </figure>
+        </article>
+        <article id="fishInfoArticles">
+            <figure class="fishImages">
+                <img src="https://64.media.tumblr.com/62a5c495effc27455aba7a316a31cc24/d994bb6cebec18b9-95/s540x810/d2ae04a896a325fd4500ca842658dc4e0aedee21.pnj"
+                    alt="Pudge_Eating_PB&J">
+            </figure>
+        </article>
+        <article id="fishInfoArticles">
+            <figure class="fishImages">
+                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F10%2F19%2FJaguar-Shark.jpg"
+                    alt="Jaguar Shark" width="500" height="200">
+            </figure>
+        </article>-->
+    </section>
+    <aside id="fishAndTankCareTips">
+        <h2 id="careTipTitle">Fish & Tank Care Tips</h2>
+        <h4 id="careTipSubTitle1">Tip One</h4>
+        <p id="careTipText1">lorem ipsum</p>
+        <h4 id="careTipSubTitle2">Tip Two</h4>
+        <p id="careTipText2">lorem ipsum</p>
+        <h4 id="careTipSubTitle3">Tip Three</h4>
+        <p id="careTipText3">lorem ipsum</p>
+    </aside>
+    <section id="FishLocations">
+        <h2 id="fishLocationsTitleText">Fish Harvesting Locations</h2>
+        <article id="travelTipQuoteArticle1">
+            <p id="travelTipQuote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua." -Author</p>
+        </article>
+        <article id="travelTipQuoteArticle2">
+            <p id="travelTipQuote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua." -Author</p>
+        </article>
+        <article id="travelTipQuoteArticle3">
+            <p id="travelTipQuote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua." -Author</p>
+        </article>
+        <article id="fishLocationsArticle">
+            <h3 id="fishLocation1">Fish Location One</h3>
+            <p id="fishLocationText1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.</p>
+            <h3 id="fishLocation2">Fish Location Two</h3>
+            <p id="fishLocationText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.</p>
+            <h3 id="fishLocation3">Fish Location Three</h3>
+            <p id="fishLocationText3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.</p>
+
+        </article>
+
+    </section>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>
