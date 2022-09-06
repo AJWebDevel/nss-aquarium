@@ -1,8 +1,8 @@
-const { getFish } = require('./database.js')
+import { getFish } from './database.js'
 
 const allFish = getFish()
 // Import the FishList function from the correct module
-const { fishList } = require('./fishList.js')
+import { fishList } from './fishList.js'
 const listHTMLFish = fishList()
 
 for (const fish of allFish) {
@@ -18,7 +18,7 @@ for (const fish of allFish) {
     Use . for elements with a "class" attribute
     Use # for elements with an "id" attribute
  */
-const parentHTMLElement = document.querySelector(".fishPictures")
+const parentHTMLElement = document.querySelector(".listOfFish")
 
 
-parentHTMLElement.innerHTML = FishList()
+parentHTMLElement.innerHTML = fishList()
